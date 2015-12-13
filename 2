@@ -1,0 +1,30 @@
+program funkcja;
+var 
+  delta , x1 , x2: real;
+  a, b, c: real;
+begin
+  writeln('Podaj wspolczynniki a, b, c trojmianu kwadratowego: ');
+  readln(a, b, c);
+  if a = 0 then 
+    writeln('TO NIE JEST FUNKCJA KWADRATOWA')
+  else 
+  begin
+    delta := (b * b) - (4 * a * c);
+    writeln('Delta = ', delta);
+    if delta < 0 then
+      writeln('BRAK MIEJSC ZEROWYCH FUNKCJI ! (w zbiorze liczb rzeczywistych)')
+    else 
+    if delta > 0 then 
+    begin
+      x1 := ((- b) - sqrt(delta)) / (2 * a);
+      x2 := ((- b) + sqrt(delta)) / (2 * a);
+      writeln('X1 = ' , x1);
+      writeln('X2 = ' , x2);
+    end 
+    else 
+    begin
+      x1 := (- b) / (2 * a);
+      writeln('X1 = ' , x1);
+    end;
+  end;
+end.
