@@ -1,0 +1,2 @@
+# NarzedziaPracyGrupowej-
+Repozytorium do NPG
