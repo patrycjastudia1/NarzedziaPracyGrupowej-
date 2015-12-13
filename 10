@@ -8,6 +8,10 @@ public class Lamana extends Applet
     int xpoint;
     int ypoint;
  
+ 
+ 
+ 
+ 
     public void init()
     {
         setBackground(Color.BLACK);
