@@ -1,0 +1,30 @@
+program kostka;
+uses 
+  crt;
+
+var
+  kost: integer;
+  znak: string;
+
+begin
+  randomize;
+  repeat
+    clrscr;
+    write ('Ilu scienna kostka chcesz grac ?:');
+    readln(kost);
+    if (kost < 4) then
+    begin
+      writeln('Kostka musi miec min 4 sciany');
+      readln;
+      end;
+      
+  until (kost >= 4);
+  clrscr;
+  repeat
+    write('Wylosowano : ');
+    write(random(kost)+1);
+    writeln(' aby zakonczyc wcisnij "q"');
+    readln(znak);
+  until (znak ='q') or (znak = 'Q');
+  
+end.
